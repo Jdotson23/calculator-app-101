@@ -22,22 +22,21 @@ const add = (numA, numB) => {
 
 // this function takes in two argument/numbers and returns the difference of them
 const subtract = (numA, numB) => {
-   return numA - numB
-  
+  return numA-numB
 }
 
 // These variables are already defined but that don't point to functions. It's up to you to build the functions to complete your calculator use:
 
 const multiply = (numA, numB) => {
-  return numA*numB
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
-  
+  return numA*numB
 }
 
-const divide = (numA , numB) => {
+const divide = (numA, numB) => {
   return numA/numB
 }
+// / to get a quotient,
 
 const modulus = (numA, numB) => {
   return numA%numB
@@ -67,13 +66,14 @@ const equals = () => {
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum))
     break;
-    case "division":  putResultInElement(divide(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
     break;
     case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
 }
+
 
